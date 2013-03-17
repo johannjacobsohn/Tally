@@ -1,0 +1,30 @@
+.tally *{
+	display: inline-block;
+}
+.tally > div > div{
+	height: 30px;
+	position: relative;
+}
+.tally img{
+	height: 100%;
+}
+.tally .content{
+	background: url(assets/marks.png) no-repeat 108% center;
+	background-size: auto 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 98%;
+}
+.tally-1>div>:last-child .content,
+.tally-2>div>:last-child .content,
+.tally-3>div>:last-child .content,
+.tally-4>div>:last-child .content{
+	background-position: 0% center;
+}
+.tally-1>div>:last-child .content{ width: 12%; }
+.tally-2>div>:last-child .content{ width: 26%; }
+.tally-3>div>:last-child .content{ width: 42%; }
+.tally-4>div>:last-child .content{ width: 54%; }
