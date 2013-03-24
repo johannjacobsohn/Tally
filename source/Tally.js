@@ -11,6 +11,7 @@ enyo.kind({
 		]}
 	],
 	numberChanged: function(){
+		this.number = this.number || 0;
 		this.removeClass("tally-0");
 		this.removeClass("tally-1");
 		this.removeClass("tally-2");
